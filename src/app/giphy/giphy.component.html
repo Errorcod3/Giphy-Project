@@ -1,0 +1,5 @@
+<h6>Seconds Spent on page: {{timer | async}} </h6>
+<input id="searchBox" [(ngModel)]="searchTerm" type="text" placeholder="Search String">
+<div *ngFor="let gif of gifs">
+  <img [src]="gif.images.fixed_width.url">
+</div>
